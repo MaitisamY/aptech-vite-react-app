@@ -1,0 +1,218 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    height: 10vh;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: auto;
+}
+
+.content {
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 500px;
+    border-radius: 5px;
+    border: 1px solid rgba(254, 191, 16, 0.8);
+    -webkit-box-shadow: 0px 10px 13px -7px #febe10, 5px 5px 15px 5px rgba(254,190,16,0); 
+    box-shadow: 0px 10px 13px -7px #febe10, 5px 5px 15px 5px rgba(254,190,16,0);
+}
+
+.content h1 {
+    margin: 0;
+    font-family: 'McLaren', sans-serif;
+    text-align: center;
+    font-size: 23px;
+    padding: 15px 20px 0px 20px;
+    background-color: transparent;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(254, 191, 16, 0.8);
+    padding-bottom: 15px;
+}
+
+.content h1 span {
+    text-align: center;
+    font-size: 16px;
+}
+
+.content .list-items {
+    margin-top: 15px;
+    width: 100%;
+    background-color: transparent;
+    padding: 10px 0;
+    text-align: center;
+    /* border: 1px solid rgba(254, 190, 16, 0.4); */
+}
+
+.content .list-items ul {
+    margin: 0 auto;
+}
+
+.content .list-items ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.content .list-items ul li button {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 4px 7px;
+    margin-right: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #3b3a3a;
+    font-family: 'McLaren', sans-serif;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.content .list-items ul li button:hover, .content .list-items ul li button:active, 
+.content .list-items ul li button:focus, .content .list-items ul li button.active {
+    color: black;
+    background-color: #febe10;
+}
+
+.content form {
+    margin-top: 5px;
+    padding: 10px 20px 0 20px;
+    text-align: left;
+}
+
+.content form input[type=text], .content form input[type=password] {
+    display: block;
+    margin: 10px 0 10px 0;
+    width: 90%;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #3b3a3a;
+    background-color: transparent;
+    font-family: 'McLaren', sans-serif;
+}
+
+.content form input[type=text]:active, .content form input[type=password]:active, 
+.content form input[type=text]:focus, .content form input[type=password]:focus {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: #febe10;
+}
+
+.content form input[type=text]::placeholder, .content form input[type=password]::placeholder {
+    color: #3b3a3a;
+}
+
+.content form label {
+    color: #3b3a3a;
+    font-family: 'McLaren', sans-serif;
+}
+
+.content form button {
+    display: block;
+    margin: 20px 0 20px 0;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #3b3a3a;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: 'McLaren', sans-serif;
+}
+
+.content form button:hover, .content form button:active, .content form  button:focus {
+    color: #fff;
+    background-color: #3b3a3a;
+}
+
+.content form h5 {
+    margin: 15px 0 0 0;
+    color: #3b3a3a;
+    font-family: 'McLaren', sans-serif;
+}
+
+.content .message {
+    width: 89%;
+    height: fit-content;
+    padding: 15px 20px;
+    text-align: center;
+    color: #2f3439;
+    margin-bottom: 20px;
+    background-color: #febe10;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #febe10;
+    font-family: 'McLaren', sans-serif;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+}
+
+footer pre {
+    font-family: 'McLaren', sans-serif;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer pre p {
+    font-family: 'McLaren', sans-serif;
+    color: black;
+    text-align: center;
+    white-space: pre;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        height: 5vh;
+    }
+    
+    main {
+        min-height: 78vh;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer {
+        margin: 25px 0px 25px 0px;
+        height: auto;
+    }
+
+    .content {
+        width: 98%;
+        height: auto;
+    }
+
+    .content .list-items ul li button {
+        font-size: 13px;
+    }
+
+    footer pre {
+        font-size: 13px;
+    }
+    
+    footer pre p {
+        font-size: 10px;
+    }
+}
